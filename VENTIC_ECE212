@@ -1,0 +1,23 @@
+# Application
+
+## Ask yourself:
+
+1. Why do you think Python is the most applicable programming language for scientific computing?
+
+    So I did a research why python is the most applicable programming language for scientific computing and it turns out there are 6 main reasons. Number one reason is Python has built-in support for scientific computing, Python has bridges to MATLAB or Octave, Python is a highly extensible language, Python has very good input/output (I/O) options, Python has strong support for task automation and Python can use a web front end. In my personal opinion as I go deeper in learning Python is that, it is more easier so far in the basics part unlike in the other programming languages (e.g C++,Java,etc.)
+
+
+2. If pyhton can build anything, where do you think Python is not applicable for?
+
+     I think python is not applicable in Android phones, cause so far i don't see any apps that are run by andoid. So it is not fit for android app developers.
+    
+    
+Exercise 1: Mailing Address (Solved, 9 Lines)
+
+  Create a program that displays your name and complete mailing address. The address should be printed in the format that is normally used in the area where you live. Your program does not need to read any input from the user.
+  
+print("Emmanuel Arbet Ventic")
+print ("Department of Electronics Engineering")
+print ("USeP")
+print ("Obrero, Davao City")
+print ("Philippines")
