@@ -21,3 +21,21 @@ print ("Department of Electronics Engineering")
 print ("USeP")
 print ("Obrero, Davao City")
 print ("Philippines")
+
+Exercise 2: Area of a Room(Solved, 13 lines)
+
+    Write a program that asks the user to to enter the width and length of a room. Once these values have been read, your program should compute and display the area of the room. 
+    The length and the width will be entered as floating-point numbers. Include units in your prompt and output message; either feet or meters, depending on which unit you are more comfortable working with.
+    
+#Compute the area of room 
+
+#read the dimensions from the user
+lenght =  float(input("Enter the lenght the room in ft"))
+width = float(input("Enter the width off the room in ft"))
+
+#Compute the area of the room
+area = lenght * width
+
+#display of result
+print("The area of the room is", area, "square feet")
+
