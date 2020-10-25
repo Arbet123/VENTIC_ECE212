@@ -71,3 +71,17 @@ print(a,"%",b,"=",a%b)
 print ("math.log10(a) : ", math.log10(a))
 #Calculating and printing log10ab
 print ("math.log10(ab) : ", math.log10(a)+ math.log10(b))
+
+Exercise 4: Area and Volume (15 lines)
+Write a python program that begins by reading a radius, r, from the user.The program will continue by computing and displaying the area of a circle with radius r and the volume of a sphere with radius r 
+Use the value pi = 3.142 for your calculations.
+ # Read radius
+    radius = float(input("\nEnter the radius: "))
+    pi = 3.142
+    # Calculate area of the circle and volume of shpere
+    area_circle = pi * radius * radius
+    volume_sphere = 4/3 * pi * radius * radius * radius
+    # Display the result with radius
+    print("Area of the circle of radius",round(radius,2),"is:",round(area_circle,2))
+    print("Volume of the sphere of radius",round(radius,2),"is:",round(volume_sphere,2))
+    
