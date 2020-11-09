@@ -85,3 +85,47 @@ Use the value pi = 3.142 for your calculations.
     print("Area of the circle of radius",round(radius,2),"is:",round(area_circle,2))
     print("Volume of the sphere of radius",round(radius,2),"is:",round(volume_sphere,2))
     
+
+
+LESSON 2
+
+
+Application:
+
+Distance between Two Points on Earth (27 lines)
+
+    The surface of the Earth is curved, and the distance between degrees of longitude varies with latitude. As a result, finding the distance between two points on the surface of the Earth is more complicated than simply using the Pythagorean theorem. Let (t1, g1) and (t2, g2) be the latitude and longitude of two points on the Earth’s surface. 
+    The distance between these points, following the surface of the Earth, in kilometers is: distance = 6371.01 × arccos(sin(t1) × sin(t2) + cos(t1) × cos(t2) × cos(g1 − g2)) The value 6371.01 in the previous equation wasn’t selected at random. 
+    It is the average radius of the Earth in kilometers.
+    
+    import math
+    #Function to calculate distnce
+    def calcDistance(lat1,long1,lat2,long2):
+    return  6371.01*math.acos(math.sin(lat1) *math.sin(lat2) +math.cos(lat1)*math.cos(lat2)*math.cos(long1-long2))
+    #Function to convert degree to radian
+    def convertRadians(val):
+    return val*0.01745329252
+    #Main function
+    def main():
+    #Prompt for latitude ang longitude of point1
+    lattitude1=(float(input("Enter lattitude of point1: ")))
+    longitude1=(float(input("Enter longitude of point1: ")))
+    #Prompt for latitude ang longitude of point2
+    lattitude2=(float(input("Enter lattitude of point2: ")))
+    longitude2=(float(input("Enter longitude of point2: ")))
+    #Get radian values
+    lattitude1=convertRadians(lattitude1)
+    longitude1=convertRadians(longitude1)
+    lattitude2=convertRadians(lattitude2)
+    longittude2=convertRadians(longitude2)
+    #Display result
+    print('Distance between two points = %.4f kms'%calcDistance(lattitude1,longitude1,lattitude2,longitude2))
+    #program starts here
+    if __name__=="__main__":
+    main()
+
+
+
+
+
+
